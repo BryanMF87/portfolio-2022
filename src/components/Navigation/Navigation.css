@@ -1,0 +1,51 @@
+.sticky-wrapper {
+    position: sticky;
+    top: 0rem;
+    z-index: 4;
+    background: #1c1c1c;
+    transition: background-color .25s;
+}
+
+.sticky-wrapper * {
+    color: white;
+}
+
+    .sticky-wrapper-light {
+        position: sticky;
+        top: 0rem;
+        z-index: 4;
+        background: white;
+        transition: background-color .25s;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    } 
+
+    .sticky-wrapper-light * {
+        color: black;
+    }
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+.brand {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    font-size: .85rem;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links li:hover {
+    opacity: 75%;
+}

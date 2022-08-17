@@ -1,0 +1,327 @@
+.hero {
+    display: flex;
+    align-items: end;
+    height: 100vh;
+    width: 100%;
+    margin-top: -60px;
+    background: #1C1C1C;
+    color: white;
+}
+
+    .hero h1 {
+        width: 500px;
+        margin: 0 auto;
+        position:relative;
+        top: 300px;
+        left: -300px;
+        line-height: 100px;
+        z-index: 0;
+    }
+
+    .hero-image {
+        width: 30em;
+        height: auto;
+        margin: 0 auto;
+        filter: drop-shadow(0px 0px 30px #1C1C1C);
+        z-index: 1;
+    }
+
+    .hero-info {
+        background: #1c1c1c;
+        position: absolute;
+        width: 248px;
+        right: 0px;
+        left: 725px;
+        margin: 0 auto;
+        bottom: 150px;
+        z-index: 2;
+    }
+
+    p.grey:first-of-type {
+        font-weight: bold;
+    }
+
+    .hero h4 {
+        margin: .25rem 0 .5rem 0;
+    }
+
+    .hero-buttons {
+        margin: 2rem auto 0 auto;
+        display: flex;
+        column-gap: 10px;
+    }
+
+.about {
+    margin: 5rem 0 7rem 0;
+}
+
+    .about-me {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-me h3 {
+        line-height: 2.5rem;
+    }
+
+    .about-me p {
+        margin-top: 1rem;
+    }
+
+
+    .exp-banner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2.5rem 0 3.5rem 0;
+    }
+
+        .grey-box {
+            flex-grow: 3;
+            height: 60px;
+            width: 100%;
+            background: #f7f7f7;
+        }
+
+        .exp-item {
+            padding: 1rem;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5px;
+            min-width: 200px;
+        }
+
+        .exp-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .exp-item p:first-of-type {
+            font-size: 20px;
+            line-height: 1.30rem;
+            margin-top: 10px;
+        }
+
+        .exp-item p.light {
+            font-size: 14px;
+            width: 100%;
+        }
+
+    .tech-stack h4 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+        .knowledge {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        }
+
+        .knowledge ul {
+            max-width: 400px;
+            width: 75%;
+        }
+
+        .knowledge ul:first-child {
+            justify-self: end;
+        }
+
+.work {
+    background: #f7f7f7;
+    padding: 7rem 0;
+    text-align: center;
+}
+
+    .work h3 {
+        margin-bottom: 2rem;
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        width: 100%;
+    }
+
+.contact {
+    margin: 7rem 0;
+}
+
+    .contact .container {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .contact .container img {
+        width: 40%;
+        height: auto;
+    }
+
+    .contact-info {
+        width: 60%;
+    }
+
+    .contact-info p {
+        margin: 1.5rem 0;
+        max-width: 525px;
+    }
+
+    .contact-methods {
+        display: inline-flex;
+        gap: 25px;
+    }
+
+    .contact-methods > li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .purple {
+        color: #BD1DCB;
+        font-size: 1.5rem;
+    }
+
+    .contact-methods button {
+        border: none;
+    }
+
+    .contact-methods button:hover {
+        background: white;
+    }
+
+
+    
+
+
+/* responsive css */
+
+@media screen and (max-width: 1000px) {
+
+    .hero {
+        height: 110vh;
+    }
+
+    .hero h1 {
+        text-align: center;
+        font-size: 10rem;
+        line-height: 8.5rem;
+        width: 100%;
+        top: 175px;
+        left: 0;
+        right: 0;
+    }
+
+    .hero-info {
+        position: absolute;
+        bottom: -190px;
+        right: 0;
+        left: 0;
+        box-sizing: content-box;
+        padding: 1.5rem;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .about-me {
+        margin-top: 12rem;
+    }
+
+    .knowledge ul {
+        margin: 0 auto;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contact .container {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-info p {
+        margin: 1.5rem auto;
+    }
+
+    .contact .container img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero h1 {
+        font-size: 8rem;
+        line-height: 7.5rem;
+    }
+}
+
+@media screen and (max-width: 645px) {
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero h1 {
+        top: 100px;
+        font-size: 7rem;
+        line-height: 5.5rem;
+    }
+
+    .hero-info {
+        bottom: -130px;
+    }
+
+    .knowledge {
+        grid-template-columns: 1fr;
+    }
+
+    .knowledge ul {
+        width: 100%;
+    }
+
+    .knowledge ul:first-child {
+        justify-self: start;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-methods {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-methods > li {
+        margin: 0 auto;
+    }
+
+    .contact-methods p {
+        margin: .25rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero h1 {
+        top: 100px;
+        font-size: 6rem;
+        line-height: 5.5rem;
+        top: 50px;
+    }
+}

@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+
+
+/* BASIC RESET */
+
+*, *::before, *::after {
+  box-sizing: border-box; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html, body {
+  height: 100%; 
+  font-family: Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* TEXT STYLING */
+
+h1 {
+  font-size: 7rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+p.grey {
+  color: grey; 
+}
+
+p.light {
+  color: #8c9dad;
+}
+
+/* ELEMENT STYLING */
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  font-size: .9rem;
+  border-radius: .5rem;
+  padding: .25rem .5rem;
+  cursor: pointer;
+}
+
+  button.white {
+    background: white;
+    color: black;
+    border: solid 1px white;
   }
+
+    button.white:hover {
+      background: black;
+      color: white;
+    }
+
+    button.white-transparent {
+      background: none;
+      border: 1px solid white;
+      color: white;
+    }
+
+    button.white-transparent:hover {
+      background: white;
+      color: black;
+    }
+
+  button.black {
+    background: black;
+    color: white;
+    border: 1px solid black;
+  }
+
+    button.black:hover {
+      background: white;
+      color: black;
+    }
+
+    button.black-transparent {
+      background: none;
+      color: black;
+      border: 1px solid black;
+    }
+
+    button.black-transparent:hover {
+      background: black;
+      color: white;
+    }
+
+  button.light {
+    background: white;
+    color: #8c9dad;
+    border: 1px solid #8c9dad;
+  }
+
+    button.light:hover {
+      background: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* CUSTOM STYLING */
+
+.inline {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
