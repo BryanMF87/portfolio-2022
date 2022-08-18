@@ -4,7 +4,6 @@ import ListOfProjects from '../Projects/listOfProjects';
 
 const Sidebar = ({isOpen, setIsOpen, activeProject}) => {
 
-    // use props from activeProject for sidebar content
     const {id, title, codeLink, image, imageAlt, tags, details, challenges, lessons} = ListOfProjects.find((project) => {
         return project.title === activeProject;
     });
