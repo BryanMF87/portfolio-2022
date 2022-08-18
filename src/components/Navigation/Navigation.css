@@ -49,3 +49,41 @@ nav {
 .nav-links li:hover {
     opacity: 75%;
 }
+
+
+
+@media screen and (max-width: 645px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .sticky-wrapper .container {
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    ul.nav-links {
+       margin: 0 auto; 
+       gap: 10px;
+    }
+
+    .brand {
+        text-align: left;
+        font-size: 1.5em;
+        padding: .5em 0;
+    }
+
+
+
+    ul.nav-links li {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav-links button {
+        background: none;
+    }
+}

@@ -15,12 +15,11 @@ const Navigation = () => {
       <div className="container">
         <nav>
             <div className="brand">BF</div>
-            <span className="h-line"></span>
             <ul className="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><button>Home</button></a></li>
+                <li><a href="#about"><button>About</button></a></li>
+                <li><a href="#work"><button>Work</button></a></li>
+                <li><a href="#contact"><button>Contact</button></a></li>
             </ul>
         </nav>
       </div>
