@@ -13,11 +13,10 @@ const Navigation = () => {
   window.addEventListener("scroll", changeNavColor);
 
 
-  // change mobileIcon & reveal nav-links on click
-  const [mobileIcon, setMobileIcon] = useState(true);
+
   const [showNav, setShowNav] = useState(false);
-  const changeMobileIcon = () => {
-    setMobileIcon(!mobileIcon);
+  const handleNavChange = () => {
+    showNav ? setShowNav(false) : setShowNav(true);
   };
  
 
@@ -28,16 +27,17 @@ const Navigation = () => {
             <div className="mobile-navbar">
               <div className="brand">BF</div>
               <div className="mobile-icon">
-                <button onClick={changeMobileIcon}>{mobileIcon ? <FiMenu /> : <CgClose />}</button>
+                <button onClick={handleNavChange}><FiMenu /></button>
               </div>
             </div>
             <ul className="nav-links" style={{
-              display: mobileIcon ? '' : 'flex',
+              display: showNav ? '' : 'flex',
             }}>
-                <li><a href="#home"><button>Home</button></a></li>
-                <li><a href="#about"><button>About</button></a></li>
-                <li><a href="#work"><button>Work</button></a></li>
-                <li><a href="#contact"><button>Contact</button></a></li>
+                <li><button onClick={handleNavChange}>X</button></li>
+                <li><a href="#home"><button onClick={handleNavChange}>Home</button></a></li>
+                <li><a href="#about"><button onClick={handleNavChange}>About</button></a></li>
+                <li><a href="#work"><button onClick={handleNavChange}>Work</button></a></li>
+                <li><a href="#contact"><button onClick={handleNavChange}>Contact</button></a></li>
             </ul>
         </nav>
       </div>

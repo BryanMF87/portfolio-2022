@@ -19,8 +19,6 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
 // THINGS TO DO
     // Make website responsive
     // fix used button colors
-    // fix project buttons line height
-    // Move contact button background to hover, maybe
     // Create short usage videos for each project and add to website
     // Take personal pictures, add to website
 

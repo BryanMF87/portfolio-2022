@@ -97,6 +97,8 @@ nav {
         width: 100%;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        background: #1c1c1c;
     }
 
     ul.nav-links li {
@@ -108,5 +110,6 @@ nav {
     ul.nav-links button {
         margin: .5rem 0;
         font-size: 2rem;
+        color: white;
     }
 }
