@@ -6,9 +6,9 @@
     transition: background-color .25s;
 }
 
-.sticky-wrapper * {
-    color: white;
-}
+    .sticky-wrapper * {
+        color: white;
+    }
 
     .sticky-wrapper-light {
         position: sticky;
@@ -35,6 +35,10 @@ nav {
     font-size: 1.1rem;
 }
 
+.mobile-icon {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -50,40 +54,59 @@ nav {
     opacity: 75%;
 }
 
+.nav-links button {
+    border: none;
+    background: none;
+}
 
 
 @media screen and (max-width: 645px) {
+
     nav {
         flex-direction: column;
-        width: 100%;
         padding: 0;
     }
 
-    .sticky-wrapper .container {
+    .mobile-navbar {
         width: 100%;
-        margin: 0 auto;
-        
-    }
-
-    ul.nav-links {
-       margin: 0 auto; 
-       gap: 10px;
+        display: flex;
+        align-items: center;   
     }
 
     .brand {
-        text-align: left;
-        font-size: 1.5em;
-        padding: .5em 0;
+        font-size: 2.25rem;
+        margin: .5rem 0;
     }
 
+    .mobile-icon {
+        display: block;
+        margin-left: auto;
+    }
 
+    .mobile-icon button {
+        background: none;
+        border: none;
+        font-size: 2rem;
+    }
+
+    ul.nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0px;
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 
     ul.nav-links li {
-        width: 100%;
-        margin-left: 0;
+        color: white;
+        text-align: center;
+        margin: 0;
     }
 
-    .nav-links button {
-        background: none;
+    ul.nav-links button {
+        margin: .5rem 0;
+        font-size: 2rem;
     }
 }

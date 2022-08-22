@@ -60,7 +60,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   line-height: 1.75rem;
 }
 
@@ -68,6 +68,10 @@ h5 {
   font-size: 1.1rem;
   line-height: 1.35rem;
   font-weight: 500;
+}
+
+a, a:hover, a:active {
+  color: black;
 }
 
 p {
@@ -163,7 +167,7 @@ button {
 
 .container {
   width: 80%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 

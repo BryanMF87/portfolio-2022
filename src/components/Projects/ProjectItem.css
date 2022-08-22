@@ -26,3 +26,8 @@
         justify-content: center;
         margin-top: 1rem;
     }
+
+    .project button {
+        line-height: 1rem;
+        padding: .5rem;
+    }

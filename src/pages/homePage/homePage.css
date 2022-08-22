@@ -1,6 +1,4 @@
 .hero {
-    display: flex;
-    align-items: end;
     height: 100vh;
     width: 100%;
     margin-top: -60px;
@@ -8,33 +6,48 @@
     color: white;
 }
 
+    .hero .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        align-self: end;
+        height: 100vh;
+    }
+
     .hero h1 {
-        width: 500px;
-        margin: 0 auto;
-        position:relative;
-        top: 300px;
-        left: -300px;
-        line-height: 100px;
-        z-index: 0;
+        height: 100%;
+        width: 100%;
+        max-width: 20rem;
+        position: absolute;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        text-align: right;
     }
 
     .hero-image {
-        width: 30em;
-        height: auto;
-        margin: 0 auto;
-        filter: drop-shadow(0px 0px 30px #1C1C1C);
-        z-index: 1;
+        position: absolute;
+        width: 70vh;
+        filter: drop-shadow(0 -.5rem 0.5rem rgba(22, 22, 22, 0.5));
     }
 
     .hero-info {
-        background: #1c1c1c;
+        background: rgb(28, 28, 28, .75);
+        width: 15rem;
         position: absolute;
-        width: 248px;
-        right: 0px;
-        left: 725px;
-        margin: 0 auto;
-        bottom: 150px;
-        z-index: 2;
+        right: 3vw;
+        bottom: 1rem;
+        box-sizing: content-box;
+        padding:1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        border-radius: .5rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        margin-top: 1rem;
+        column-gap: 10px;
     }
 
     p.grey:first-of-type {
@@ -43,12 +56,6 @@
 
     .hero h4 {
         margin: .25rem 0 .5rem 0;
-    }
-
-    .hero-buttons {
-        margin: 2rem auto 0 auto;
-        display: flex;
-        column-gap: 10px;
     }
 
 .about {
@@ -190,10 +197,11 @@
 
     .contact-methods button {
         border: none;
+        background: none;
     }
 
     .contact-methods button:hover {
-        background: white;
+        opacity: 50%;
     }
 
 
@@ -204,28 +212,22 @@
 
 @media screen and (max-width: 1000px) {
 
-    .hero {
-        height: 100vh;
-    }
-
     .hero h1 {
+        font-size: 20vw;
+        line-height: 17vw;
+        max-width: 100%;
+        height: 50%;
         text-align: center;
-        font-size: 10rem;
-        line-height: 8.5rem;
-        width: 100%;
-        top: 175px;
-        left: 0;
-        right: 0;
+        top: 3rem;
     }
 
     .hero-info {
-        position: absolute;
-        bottom: -190px;
-        right: 0;
+        height: 13rem;
         left: 0;
-        box-sizing: content-box;
-        padding: 1.5rem;
-        border-radius: 5px;
+        right: 0;
+        margin: 0 auto;
+        top: 85vh;
+        background: #1c1c1c;
         text-align: center;
     }
 
@@ -265,38 +267,28 @@
 
 
 
-
-@media screen and (max-width: 800px) {
-    .hero h1 {
-        font-size: 8rem;
-        line-height: 7.5rem;
-    }
-}
-
-
-
-
 @media screen and (max-width: 645px) {
 
-    .hero {
-        height: 100vh;
-    }
-
-    .hero h1 {
-        top: 100px;
-        font-size: 7rem;
-        line-height: 5.5rem;
-    }
-
-
-    .hero-buttons {
-        flex-direction: column;
-        row-gap: 10px;
-    }
-
-    .hero-buttons button {
-        font-size: 1.5em;
+    .hero .container {
         width: 100%;
+    }
+
+        .hero-info {
+            height: 16.5rem;
+        }
+
+        .hero-buttons {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        .hero-buttons button {
+            font-size: 1.25em;
+            width: 100%;
+        }
+
+    .about-me {
+        margin-top: 15rem;
     }
 
     .knowledge {
@@ -310,31 +302,37 @@
     .knowledge ul:first-child {
         justify-self: start;
     }
-
-    .project-list {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-methods {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-methods > li {
-        margin: 0 auto;
-    }
-
-    .contact-methods p {
-        margin: .25rem 0;
-    }
 }
 
 @media screen and (max-width: 600px) {
 
+    .hero {
+        max-height: 100vw;
+    }
+
     .hero h1 {
-        top: 100px;
-        font-size: 6rem;
-        line-height: 5.5rem;
-        top: 50px;
+        position: relative;
+        height: 100px;
+        top: 0px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-methods {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .contact-methods li {
+        margin-left: 2rem;
+    }
+
+    .contact-methods button {
+        font-size: 1.15rem;
     }
 }
