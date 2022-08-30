@@ -5,13 +5,11 @@ import {FiMenu} from 'react-icons/fi';
 
 const Navigation = () => {
 
-  // change nav color on scroll
   const [navColor, setNavColor] = useState(false);
   const changeNavColor = () => {
     window.scrollY >= window.innerHeight ? setNavColor(true) : setNavColor(false)
   }
   window.addEventListener("scroll", changeNavColor);
-
 
 
   const [showNav, setShowNav] = useState(false);
@@ -31,7 +29,7 @@ const Navigation = () => {
               </div>
             </div>
             <ul className="nav-links" style={{
-              display: showNav ? '' : 'flex',
+              display: !showNav ? '' : 'flex',
             }}>
                 <li><button onClick={handleNavChange}>X</button></li>
                 <li><a href="#home"><button onClick={handleNavChange}>Home</button></a></li>

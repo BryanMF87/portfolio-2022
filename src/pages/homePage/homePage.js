@@ -17,8 +17,6 @@ import crissCross from './crisscross.jpg';
 const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
 
 // THINGS TO DO
-    // Make website responsive
-    // fix used button colors
     // Create short usage videos for each project and add to website
     // Take personal pictures, add to website
 
@@ -47,7 +45,7 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
             <section className="about" id="about">
                 <div className="container">
                     <div className="about-me">
-                        <h3>Want to start a new web project?</h3>
+                        <h3>Starting a new web project?</h3>
                         <h3>I can help you design and build it!</h3>
                         <p className="light">I am a classically trained graphic designer and self-taught web developer who loves clean design and even cleaner code. I’m passionate about working on creative and interesting projects, including those that promote positive social engineering and sustainable practices.</p>
                     </div>

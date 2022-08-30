@@ -59,6 +59,10 @@ nav {
     background: none;
 }
 
+ul.nav-links li:first-of-type {
+    display: none;
+}
+
 
 @media screen and (max-width: 645px) {
 
@@ -102,7 +106,6 @@ nav {
     }
 
     ul.nav-links li {
-        color: white;
         text-align: center;
         margin: 0;
     }
@@ -111,5 +114,9 @@ nav {
         margin: .5rem 0;
         font-size: 2rem;
         color: white;
+    }
+
+    ul.nav-links li:first-of-type {
+        display: block;
     }
 }

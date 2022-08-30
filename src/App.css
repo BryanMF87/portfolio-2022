@@ -70,7 +70,7 @@ h5 {
   font-weight: 500;
 }
 
-a, a:hover, a:active {
+a, a:focus, a:hover, a:active {
   color: black;
 }
 

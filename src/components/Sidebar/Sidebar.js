@@ -4,7 +4,7 @@ import ListOfProjects from '../Projects/listOfProjects';
 
 const Sidebar = ({isOpen, setIsOpen, activeProject}) => {
 
-    const {id, title, codeLink, image, imageAlt, tags, details, challenges, lessons} = ListOfProjects.find((project) => {
+    const {id, title, liveLink, codeLink, image, imageAlt, tags, details, challenges, lessons} = ListOfProjects.find((project) => {
         return project.title === activeProject;
     });
 
@@ -24,8 +24,8 @@ const Sidebar = ({isOpen, setIsOpen, activeProject}) => {
             </button>
             <h3>{title}</h3>
             <div className="inline">
-                <button className="black" a href={"/projects/" + id} target="_blank">Live demo</button>
-                <button className="light" a href={codeLink}>View code</button>
+                <a href={liveLink} target="_blank"><button className="black">Live demo</button></a>
+                <a href={codeLink}><button className="light">View code</button></a>
             </div>
             <img src={image} alt={imageAlt} />
             <ul className="project-tags">
