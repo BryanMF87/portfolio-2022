@@ -4,7 +4,7 @@ import ListOfProjects from '../Projects/listOfProjects';
 
 const Sidebar = ({isOpen, setIsOpen, activeProject}) => {
 
-    const {id, title, liveLink, codeLink, image, imageAlt, tags, details, challenges, lessons} = ListOfProjects.find((project) => {
+    const {title, liveLink, codeLink, video, videoAlt, tags, details, challenges, lessons} = ListOfProjects.find((project) => {
         return project.title === activeProject;
     });
 
@@ -24,10 +24,12 @@ const Sidebar = ({isOpen, setIsOpen, activeProject}) => {
             </button>
             <h3>{title}</h3>
             <div className="inline">
-                <a href={liveLink} target="_blank"><button className="black">Live demo</button></a>
-                <a href={codeLink}><button className="light">View code</button></a>
+                <a href={liveLink} target="_blank" rel="noopener noreferrer"><button className="black">Live demo</button></a>
+                <a href={codeLink} target="_blank" rel="noopener noreferrer"><button className="light">View code</button></a>
             </div>
-            <img src={image} alt={imageAlt} />
+            <video src={video} type="video/mp4" alt={videoAlt} loop>
+                Sorry, your browser doesn't support videos.
+            </video>
             <ul className="project-tags">
                 {tagList}
             </ul>

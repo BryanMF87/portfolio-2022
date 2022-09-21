@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Navigation.css'
-import {CgClose} from 'react-icons/cg';
 import {FiMenu} from 'react-icons/fi';
 
 const Navigation = () => {

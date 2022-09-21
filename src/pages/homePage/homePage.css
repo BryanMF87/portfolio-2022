@@ -149,7 +149,7 @@
 
     .project-list {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 25px;
         width: 100%;
     }
@@ -219,6 +219,10 @@
         height: 50%;
         text-align: center;
         top: 3rem;
+    }
+
+    .hero-image {
+        margin: 0 auto;
     }
 
     .hero-info {

@@ -4,37 +4,33 @@ import React from 'react';
 import ListOfProjects from '../../components/Projects/listOfProjects';
 import ProjectItem from '../../components/Projects/ProjectItem';
 import Skills from '../../components/Skills/Skills';
-// icon imports
+// import icons
 import { FaLinkedinIn } from 'react-icons/fa';
 import { MdAlternateEmail } from 'react-icons/md';
 import { FiDownload } from 'react-icons/fi';
-// image imports
-import resume from '../homePage/resume2022.pdf';
-import myGuy from './guy.png';
-import crissCross from './crisscross.jpg';
+// import assets
+import myGuy from '../../assets/guy.png';
+import crissCross from '../../assets/crisscross.jpg';
+import resume from '../../assets/resume2022.pdf';
 
 
 const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
-
-// THINGS TO DO
-    // Create short usage videos for each project and add to website
-    // Take personal pictures, add to website
 
     return (
         <main>
             <section className="hero" id="home">
                 <div className="container">
                     <h1>HELLO WORLD</h1>
-                    <img className="hero-image" src={myGuy} alt="personal image" />
+                    <img className="hero-image" src={myGuy} alt=""/>
                     <div className="hero-info">
                         <p className="grey">Welcome to my website!</p>
                         <h4>I'm Bryan, a front-end web developer based in Georgia</h4>
                         <p className="grey"> <i>(The country, not the state)</i></p>
                         <div className="hero-buttons">
-                            <a href="https://github.com/BryanMF87" target="_blank">
+                            <a href="https://github.com/BryanMF87" target="_blank" rel="noopener noreferrer">
                                 <button className="white">My Github</button>
                             </a>
-                            <a href={resume} target="_blank">
+                            <a href={resume} target="_blank" rel="noopener noreferrer">
                                 <button className="white-transparent">My resume</button>
                             </a>
                         </div>
@@ -91,7 +87,8 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                             <ProjectItem
                                 key={obj.id}
                                 title={obj.title}
-                                image={obj.image}
+                                video={obj.video}
+                                vieoAlt={obj.videoAlt}
                                 codeLink={obj.codeLink}
                                 isOpen={isOpen}
                                 setIsOpen={setIsOpen}
@@ -110,11 +107,11 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                         <p className="light">Thanks for taking the time to look from my website. I'm currently looking for new opprotunites so if you’d like to hire me or collaborate on a project together please reach out using the links below.</p>
                         <ul className="contact-methods">
                             <li><span className='purple'><MdAlternateEmail /></span><a href="mailto:bmfink87@gmail.com"><button>Send email</button></a></li>
-                            <li><span className='purple'><FaLinkedinIn /></span><a href="https://www.linkedin.com/in/bfink777" target="_blank"><button>Social media</button></a></li>
-                            <li><span className='purple'><FiDownload /></span><a href={resume} target="_blank"><button>Download resume</button></a></li>
+                            <li><span className='purple'><FaLinkedinIn /></span><a href="https://www.linkedin.com/in/bfink777" target="_blank" rel="noopener noreferrer"><button>Social media</button></a></li>
+                            <li><span className='purple'><FiDownload /></span><a href={resume} target="_blank" rel="noopener noreferrer"><button>Download resume</button></a></li>
                         </ul>
                     </div>
-                    <img src={crissCross} alt="2nd personal image"/>
+                    <img src={crissCross} alt=""/>
                 </div>
             </section>
         </main>
