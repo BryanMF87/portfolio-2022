@@ -11,8 +11,8 @@ const ProjectItem = ({title, video, videoAlt, isOpen, codeLink, setIsOpen, setAc
 
   return (
     <div className="project">
-        <video>
-            <source src={video} type="video/mp4" alt={videoAlt} autoplay loop />
+        <video muted autoplay loop>
+            <source src={video} type="video/mp4" alt={videoAlt} />
             Sorry, your browser doesn't support videos.
         </video>
         <div className="project-info">
