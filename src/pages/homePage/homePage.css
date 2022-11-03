@@ -122,20 +122,24 @@
         margin-bottom: 1rem;
     }
 
-        .knowledge {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 20px;
-        }
+    ul.skills {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
-        .knowledge ul {
-            max-width: 400px;
-            width: 75%;
-        }
-
-        .knowledge ul:first-child {
-            justify-self: end;
-        }
+    li.skill-item {
+        font-size: 18px;
+        background: #f7f7f7;
+        padding: 0 .5rem;
+        border-radius: .25rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    }
 
 .work {
     background: #f7f7f7;
@@ -158,44 +162,34 @@
     margin: 7rem 0;
 }
 
-    .contact .container {
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-    }
-
-    .contact .container img {
-        width: 40%;
-        height: auto;
-    }
-
-    .contact-info {
-        width: 60%;
-    }
+.contact-info {
+    width: 100%;
+    text-align: center;
+}
 
     .contact-info p {
-        margin: 1.5rem 0;
+        margin: 1.5rem auto;
         max-width: 525px;
     }
 
     .contact-methods {
-        display: inline-flex;
-        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        margin: 0 auto;
+        gap: 0;
     }
 
     .contact-methods > li {
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 10px;
         margin-bottom: 1rem;
     }
 
-    .purple {
-        color: #BD1DCB;
-        font-size: 1.5rem;
-    }
-
     .contact-methods button {
+        font-size: 1.15rem;
         border: none;
         background: none;
     }
@@ -204,11 +198,20 @@
         opacity: 50%;
     }
 
-
+    .purple {
+        color: #BD1DCB;
+        font-size: 1.5rem;
+    }
     
 
 
 /* responsive css */
+
+@media screen and (min-width: 1300px) {
+    .project-list {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -249,23 +252,6 @@
 
     .project-list {
         grid-template-columns: repeat(2,1fr);
-    }
-
-    .contact .container {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        width: 100%;
-        text-align: center;
-    }
-
-    .contact-info p {
-        margin: 1.5rem auto;
-    }
-
-    .contact .container img {
-        display: none;
     }
 }
 
@@ -337,21 +323,6 @@
 
     .project-list {
         grid-template-columns: 1fr;
-    }
-    
-    .contact-methods {
-        display: flex;
-        flex-direction: column;
-        width: 15rem;
-        margin: 0 auto;
-        gap: 0;
-    }
-
-    .contact-methods li {
-        margin-left: 2rem;
-    }
-
-    .contact-methods button {
-        font-size: 1.15rem;
+        grid-template-rows: 1fr;
     }
 }

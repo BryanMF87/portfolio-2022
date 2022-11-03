@@ -1,11 +1,24 @@
 // asset imports
-import ticTacToe from '../../assets/tic-tac-toe.mp4';
-import sweetTreats from '../../assets/sweet-treats.mp4';
-import weatherApp from '../../assets/weather-app.mp4'
+import timeTracker from '../../assets/timetracker.mp4';
+import sweetTreats from '../../assets/sweettreats.mp4';
+import ticTacToe from '../../assets/tictactoe.mp4';
+import weatherApp from '../../assets/weatherapp.mp4';
 
 const ListOfProjects = [
     {
         id: 0,
+        title: "Project time tracker",
+        video: timeTracker,
+        videoAlt: "Time tracking project app",
+        tags: ["html", "css", "javascript", "local storage"],
+        details: "I've become comfortable as a Javascript developer however I needed a way to track how long I work on projects. While I could track my time on paper or download a 3rd party app, I thought creating one myself would be great practice. This project features individual action-item time tracking, mobile-first responsive design, local storage information saving, and a night-mode for after hour coding use.",
+        challenges: "My major roadblock were trying to add event listeners onto dynamically created dom elements as they were created, and learning to switch content out of local storage. It took time to understand the real problem I was facing in these instances, but once I understood why my code wasn't working, I found the answers pretty quickly from online forums.",
+        lessons: "The biggest lesson I took away from this project was event delagation, the use of attaching an event listener to a parent element to use on its dynamic child elements. This was also the first time I used multiple css design themes for a project, and I learned the basics of regular expression (regex) to format time.",
+        liveLink: "https://bryanmf87.github.io/time-keeper/",
+        codeLink: "https://github.com/BryanMF87/time-keeper",
+    },
+    {
+        id: 1,
         title: "Ecommerce website",
         video: sweetTreats,
         videoAlt: "Sweet Treats ecommerce website",
@@ -17,19 +30,19 @@ const ListOfProjects = [
         codeLink: "https://github.com/BryanMF87/ecommerce-website",
     },
     {
-        id: 1,
+        id: 2,
         title: "Weather API app",
         video: weatherApp,
         imageAlt: "Weather forecast app",
         tags: ["html", "css", "javascript", "api", "fetch", "async", "promises"],
-        details: "I created a real-time weather forecast app using weather API, fetch commands, and asynchronous Javascript.",
+        details: "I created this real-time weather forecast app using weather API data, fetch commands, and asynchronous Javascript.",
         challenges: "This was my first experience using APIs and the fetch function. Retreiving the data and getting it to display properly was probably the hardest part of this project.",
         lessons: "I liked this project a lot. I was able to utilize a lot of new syntax such as async logic / promises, a bit of JSON, and deconstruction, but I still feel like I have barely scratched the surface of API usage. I would love to do another project diving even deeper into APIs very soon.",
         liveLink: "https://bryanmf87.github.io/weather-app",
         codeLink: "https://github.com/BryanMF87/weather-app",
     },
     {
-        id: 2,
+        id: 3,
         title: "Tic-tac-toe game",
         video: ticTacToe,
         videoAlt: "Tic-tac-toe game app",
