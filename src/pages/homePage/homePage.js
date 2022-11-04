@@ -21,9 +21,8 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                     <h1>HELLO WORLD</h1>
                     <img className="hero-image" src={me} alt=""/>
                     <div className="hero-info">
-                        <p className="grey">Welcome to my website!</p>
-                        <h4>I'm Bryan, a front-end web developer based in Georgia</h4>
-                        <p className="grey"> <i>(The country, not the state)</i></p>
+                        <h4>Bryan Fink</h4>
+                        <h5 className="light">Front-end software developer</h5>
                         <div className="hero-buttons">
                             <a href="https://github.com/BryanMF87" target="_blank" rel="noopener noreferrer">
                                 <button className="white">My Github</button>
@@ -39,8 +38,7 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
             <section className="about" id="about">
                 <div className="container">
                     <div className="about-me">
-                        <h3>Starting a new web project?</h3>
-                        <h3>I can help you design and build it!</h3>
+                        <h3>I can help build your next project</h3>
                         <p className="light">
                             I am a classically trained graphic designer / web developer who loves clean design and even cleaner code.
                             I’m passionate about working on creative and interesting projects, including those that promote positive social engineering and sustainable environmental practices.
@@ -101,7 +99,7 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
             <section className="contact" id="contact">
                 <div className="container">
                     <div className="contact-info">
-                        <h2>Ready to<br />get started?</h2>
+                        <h2>Let's get started</h2>
                         <p className="light">Thanks for taking the time to look from my website. I'm currently looking for new opprotunites so if you’d like to hire me or collaborate on a project together please reach out using the links below.</p>
                         <ul className="contact-methods">
                             <li><span className='purple'><MdAlternateEmail /></span><a href="mailto:bmfink87@gmail.com"><button>Send email</button></a></li>

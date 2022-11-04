@@ -78,11 +78,11 @@ p {
   line-height: 1.75rem;
 }
 
-p.grey {
+.grey {
   color: grey; 
 }
 
-p.light {
+.light {
   color: #8c9dad;
 }
 

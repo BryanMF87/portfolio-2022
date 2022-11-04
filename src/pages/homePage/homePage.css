@@ -37,11 +37,15 @@
         width: 15rem;
         position: absolute;
         right: 3vw;
-        bottom: 1rem;
+        bottom: 4rem;
         box-sizing: content-box;
         padding:1.5rem;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         border-radius: .5rem;
+    }
+
+    .hero-info h4 {
+        margin: 0px !important;
     }
 
     .hero-buttons {
@@ -229,7 +233,7 @@
     }
 
     .hero-info {
-        height: 13rem;
+        height: 8rem;
         left: 0;
         right: 0;
         margin: 0 auto;
