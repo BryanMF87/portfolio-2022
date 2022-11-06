@@ -22,7 +22,7 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                     <img className="hero-image" src={me} alt=""/>
                     <div className="hero-info">
                         <h4>Bryan Fink</h4>
-                        <h5 className="light">Front-end software developer</h5>
+                        <h5 className="light">Front-end web developer</h5>
                         <div className="hero-buttons">
                             <a href="https://github.com/BryanMF87" target="_blank" rel="noopener noreferrer">
                                 <button className="white">My Github</button>
@@ -40,8 +40,9 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                     <div className="about-me">
                         <h3>I can help build your next project</h3>
                         <p className="light">
-                            I am a classically trained graphic designer / web developer who loves clean design and even cleaner code.
-                            I’m passionate about working on creative and interesting projects, including those that promote positive social engineering and sustainable environmental practices.
+                            I'm a front-end web developer who is passionate about clean design and even cleaner code. 
+                            I work with Javascript and the React framework to build fantastic projects. 
+                            My end goal is to find teams / projects that promote positive social engineering and environmental changes to create a better world.
                         </p>
                     </div>
                     
