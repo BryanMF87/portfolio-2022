@@ -101,7 +101,7 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                 <div className="container">
                     <div className="contact-info">
                         <h2>Let's get started</h2>
-                        <p className="light">Thanks for taking the time to look from my website. I'm currently looking for new opprotunites so if you’d like to hire me or collaborate on a project together please reach out using the links below.</p>
+                        <p className="light">Thank you for taking the time to view my website. I'm currently looking for new opprotunites, so if you would like to hire me or collaborate on a project together, please reach out using the links below.</p>
                         <ul className="contact-methods">
                             <li><span className='purple'><MdAlternateEmail /></span><a href="mailto:bmfink87@gmail.com"><button>Send email</button></a></li>
                             <li><span className='purple'><FaLinkedinIn /></span><a href="https://www.linkedin.com/in/bfink777" target="_blank" rel="noopener noreferrer"><button>Social media</button></a></li>
