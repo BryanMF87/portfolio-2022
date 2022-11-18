@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     position: relative;
 }
 
@@ -14,7 +14,6 @@
         height: 55%;
         width: 100%;
         object-fit: cover;
-        background-position: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -31,13 +30,12 @@
         right: 0;
     }
 
+    .project-info p {
+        font-weight: 700;
+    }
+
     .project-info .inline {
         gap: 10px;
         justify-content: center;
         margin-top: 1rem;
-    }
-
-    .project button {
-        line-height: 1rem;
-        padding: .5rem;
     }

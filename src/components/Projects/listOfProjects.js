@@ -7,7 +7,7 @@ import weatherApp from '../../assets/weatherapp.mp4';
 const ListOfProjects = [
     {
         id: 0,
-        title: "Project time tracker",
+        title: "Time Tracker App",
         video: timeTracker,
         videoAlt: "Time tracking project app",
         tags: ["html", "css", "javascript", "local storage"],
@@ -19,9 +19,9 @@ const ListOfProjects = [
     },
     {
         id: 1,
-        title: "Ecommerce website",
+        title: "Ecomm Website",
         video: sweetTreats,
-        videoAlt: "Sweet Treats ecommerce website",
+        videoAlt: "Sweet Treats Website",
         tags: ["html", "css", "javascript", "react", "useState", "useEffect", "react router", "local storage"],
         details: "I wanted to test my React framework skills by building an ecommerce website using common hooks like useState, useEffect, and React router. I made sure that while the website can't take actual payment info, it can save the user's choice data using local storage.",
         challenges: "There were struggles early on with the uni-directional flow of data and passing JS/hook data back and forth between components. This was also the first time I used elements like React router and local storage so it was a great project for learning new things.",
@@ -31,7 +31,7 @@ const ListOfProjects = [
     },
     {
         id: 2,
-        title: "Weather API app",
+        title: "Weather API App",
         video: weatherApp,
         imageAlt: "Weather forecast app",
         tags: ["html", "css", "javascript", "api", "fetch", "async", "promises"],
@@ -43,7 +43,7 @@ const ListOfProjects = [
     },
     {
         id: 3,
-        title: "Tic-tac-toe game",
+        title: "Tic-Tac-Toe Game",
         video: ticTacToe,
         videoAlt: "Tic-tac-toe game app",
         tags: ["html", "css", "javascript", "ES6 modules", "scope"],

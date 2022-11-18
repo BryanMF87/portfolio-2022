@@ -56,10 +56,6 @@
         column-gap: 10px;
     }
 
-    .sidebar-content h3, .sidebar-content h4 {
-        font-weight: 400;
-    }
-
     .sidebar-content h4 {
         margin: 3rem 0 .75rem 0;
     }

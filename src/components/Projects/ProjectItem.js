@@ -16,10 +16,10 @@ const ProjectItem = ({title, video, videoAlt, isOpen, liveLink, setIsOpen, setAc
             Sorry, your browser doesn't support videos.
         </video>
         <div className="project-info">
-            <h5>{title}</h5>
+            <p>{title}</p>
             <div className="inline">
-                <a href={liveLink} target="_blank" rel="noopener noreferrer"><button className="black">Live demo</button></a>
-                <button onClick={showSidebar} className="light">See more</button>
+                <a href={liveLink} target="_blank" rel="noopener noreferrer"><button className="black">Demo</button></a>
+                <button onClick={showSidebar} className="black-transparent">More</button>
             </div>
         </div>
     </div>

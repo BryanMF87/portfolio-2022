@@ -25,7 +25,7 @@ const Sidebar = ({isOpen, setIsOpen, activeProject}) => {
             <h3>{title}</h3>
             <div className="inline">
                 <a href={liveLink} target="_blank" rel="noopener noreferrer"><button className="black">Live demo</button></a>
-                <a href={codeLink} target="_blank" rel="noopener noreferrer"><button className="light">View code</button></a>
+                <a href={codeLink} target="_blank" rel="noopener noreferrer"><button className="black-transparent">View code</button></a>
             </div>
             <video muted autoPlay loop>
                 <source src={video} type="video/mp4" alt={videoAlt} />

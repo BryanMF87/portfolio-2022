@@ -57,6 +57,9 @@ nav {
 .nav-links button {
     border: none;
     background: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 ul.nav-links li:first-of-type {
@@ -64,7 +67,7 @@ ul.nav-links li:first-of-type {
 }
 
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 800px) {
 
     nav {
         flex-direction: column;
