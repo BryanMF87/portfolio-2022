@@ -10,7 +10,6 @@ import Footer from './components/Footer/Footer';
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
-
   const [activeProject, setActiveProject] = useState(ListOfProjects[0].title);
 
 

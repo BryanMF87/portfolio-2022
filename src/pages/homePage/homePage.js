@@ -17,11 +17,10 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
     return (
         <main>
             <section className="hero" id="home">
-                <h1>HELLO WORLD</h1>
+                <h1>BRYAN FINK</h1>
                 <img className="hero-image" src={me} alt="professional selfie"/>
                 <div className="hero-info">
-                    <h3>Bryan Fink</h3>
-                    <p className="light">Front-End Web Developer</p>
+                    <h3>Front-End Developer</h3>
                     <div className="hero-buttons">
                         <a href="https://github.com/BryanMF87" target="_blank" rel="noopener noreferrer">
                             <button className="white">Github</button>
@@ -41,7 +40,7 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                     </div>
                     <div className="section-content">
                         <div className="intro">
-                            <p className="light">Hi there! I’m Bryan Fink, a front-end web developer based in Tbilisi, Georgia (the country, not the state). From concept to completion, I love creating compelling layouts and turning them into wonderful websites and web applications.</p>
+                            <p className="light">Hi there! I’m Bryan Fink, a front-end developer based in Tbilisi, Georgia (the country, not the state). From concept to completion, I love creating compelling layouts and turning them into wonderful websites and web applications.</p>
                             <p className="light">I actually love it so much that I left my successful sales career in Atlanta, Georgia (the state, not the country) to move abroad and learn JavaScript and React programming. Now my goal is to continue my lifelong learning under the mentorship of an amazing company and their senior developers.</p>
                         </div>
                         <div className="tech-stack">
