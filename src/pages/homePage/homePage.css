@@ -190,6 +190,18 @@
         margin: 0 auto;
     }
 
+    .contact-methods li a {
+        color: #000 !important;
+    }
+
+    .contact-methods li a button{
+        color: #000 !important;
+    }
+
+    .contact-methods li a button p{
+        color: #000 !important;
+    }
+
     .contact-icon {
         color: #BD1DCB;
     }
