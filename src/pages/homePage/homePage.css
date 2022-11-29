@@ -213,7 +213,10 @@
 /* responsive css */
 
 @media screen and (max-width: 1025px) {
-
+    h1, h2, h3, h4, p {
+        text-align: center;
+    }
+    
     .hero {
         align-items: flex-end;
     }
@@ -274,10 +277,6 @@
 }
 
 @media screen and (max-width: 645px) {
-
-    h1, h2, h3, h4, p {
-        text-align: center;
-    }
     
     .hero {
         align-items: center;

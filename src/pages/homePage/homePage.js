@@ -12,7 +12,7 @@ import me from '../../assets/me.png';
 import resume from '../../assets/resume2022.pdf';
 
 
-const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
+const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
 
     return (
         <main>
@@ -127,12 +127,11 @@ const HomePage = ({ isOpen, setIsOpen, activeProject, setActiveProject}) => {
                                     key={obj.id}
                                     title={obj.title}
                                     video={obj.video}
-                                    vieoAlt={obj.videoAlt}
+                                    videoAlt={obj.videoAlt}
                                     liveLink={obj.liveLink}
                                     codeLink={obj.codeLink}
                                     isOpen={isOpen}
                                     setIsOpen={setIsOpen}
-                                    activeProject={activeProject}
                                     setActiveProject={setActiveProject}
                                 />
                             ))}

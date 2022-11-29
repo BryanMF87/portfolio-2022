@@ -12,14 +12,12 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeProject, setActiveProject] = useState(ListOfProjects[0].title);
 
-
   return (
     <div className="App">
       <Navigation />
       <HomePage 
         isOpen={isOpen}
         setIsOpen={setIsOpen}
-        activeProject={activeProject}
         setActiveProject={setActiveProject}
       />
       <Sidebar

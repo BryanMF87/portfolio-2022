@@ -5,8 +5,8 @@ import './ProjectItem.css';
 const ProjectItem = ({title, video, videoAlt, isOpen, liveLink, setIsOpen, setActiveProject}) => {
 
     const showSidebar = () => {
-        setIsOpen(!isOpen);
         setActiveProject(title);
+        setIsOpen(!isOpen);
     }
 
   return (
