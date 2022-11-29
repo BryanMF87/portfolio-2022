@@ -72,10 +72,11 @@ h4 {
   text-transform: uppercase;
 }
 
-a:hover { color: #000 !important; }
-a:active { color: #000 !important; } 
-a:visited { color: #000 !important; } 
-a:focus { color: #000 !important; } 
+a:link { color: #000 }
+a:hover { color: #000 }
+a:active { color: #000 } 
+a:visited { color: #000 } 
+a:focus { color: #000 } 
 
 p {
   font-family: 'Montserrat', sans-serif;
