@@ -124,7 +124,7 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
                         <div className="project-list">
                             {ListOfProjects.map((obj) => (
                                 <ProjectItem
-                                    key={obj.id}
+                                    key={obj.title}
                                     title={obj.title}
                                     video={obj.video}
                                     videoAlt={obj.videoAlt}

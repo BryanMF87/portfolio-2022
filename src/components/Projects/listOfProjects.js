@@ -1,4 +1,5 @@
 // asset imports
+import worldFlags from '../../assets/worldflags.mp4';
 import timeTracker from '../../assets/timetracker.mp4';
 import sweetTreats from '../../assets/sweettreats.mp4';
 import ticTacToe from '../../assets/tictactoe.mp4';
@@ -6,7 +7,17 @@ import weatherApp from '../../assets/weatherapp.mp4';
 
 const ListOfProjects = [
     {
-        id: 0,
+        title: "World flag flashcards",
+        video: worldFlags,
+        videoAlt: "World flag flashcard app",
+        tags: ["html", "css", "javascript", 'Async/Await', 'promises'],
+        details: "After watching the 2022 world cup I noticed I didn't recognize many international flags so I decided to create a simple (yet very addicting) world card flashcard app using REST API. Now I ",
+        challenges: "The inital product was riddled with CORS errors, bad gateways, and slow fetch responses that I had to learn how to navigate these issues, as well as learn more about working with promises since I hadn't worked with them very much before this.",
+        lessons: "After some research and mini projects with setTimeout, fetch/then, and async/await, I feel more confident working with promises and working with API response calls.",
+        liveLink: "https://bryanmf87.github.io/world-flag-flashcards/",
+        codeLink: "https://github.com/BryanMF87/world-flag-flashcards",
+    },
+    {
         title: "Time Tracker App",
         video: timeTracker,
         videoAlt: "Time tracking project app",
@@ -18,7 +29,6 @@ const ListOfProjects = [
         codeLink: "https://github.com/BryanMF87/time-keeper",
     },
     {
-        id: 1,
         title: "Ecomm Website",
         video: sweetTreats,
         videoAlt: "Sweet Treats Website",
@@ -30,11 +40,10 @@ const ListOfProjects = [
         codeLink: "https://github.com/BryanMF87/ecommerce-website",
     },
     {
-        id: 2,
         title: "Weather API App",
         video: weatherApp,
         imageAlt: "Weather forecast app",
-        tags: ["html", "css", "javascript", "api", "fetch", "async", "promises"],
+        tags: ["html", "css", "javascript", "api", "fetch", "Async/Await", "promises"],
         details: "I created this real-time weather forecast app using weather API data, fetch commands, and asynchronous Javascript.",
         challenges: "This was my first experience using APIs and the fetch function. Retreiving the data and getting it to display properly was probably the hardest part of this project.",
         lessons: "I liked this project a lot. I was able to utilize a lot of new syntax such as async logic / promises, a bit of JSON, and deconstruction, but I still feel like I have barely scratched the surface of API usage. I would love to do another project diving even deeper into APIs very soon.",
@@ -42,7 +51,6 @@ const ListOfProjects = [
         codeLink: "https://github.com/BryanMF87/weather-app",
     },
     {
-        id: 3,
         title: "Tic-Tac-Toe Game",
         video: ticTacToe,
         videoAlt: "Tic-tac-toe game app",
