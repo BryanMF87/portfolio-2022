@@ -9,7 +9,7 @@ import { MdAlternateEmail } from 'react-icons/md';
 import { FiDownload } from 'react-icons/fi';
 // import assets
 import me from '../../assets/me.png';
-import resume from '../../assets/resume2022.jpg';
+import resume from '../../assets/resume2023.pdf';
 
 
 const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
@@ -17,7 +17,7 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
     return (
         <main>
             <section className="hero" id="home">
-                <h1>BRYAN FINK</h1>
+                <h1>Bryan Fink</h1>
                 <img className="hero-image" src={me} alt="professional selfie"/>
                 <div className="hero-info">
                     <h3>Front-End Developer</h3>
@@ -35,7 +35,7 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
             <section className="about" id="about">
                 <div className="container">
                     <div className="section-header">
-                        <h2>Nice to meet you</h2>
+                        <h2>Nice to Meet You</h2>
                         <div className="purple-bar"></div>
                     </div>
                     <div className="section-content">
@@ -44,7 +44,7 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
                             <p className="light">I actually love it so much that I left my successful sales career in Atlanta, Georgia (the state, not the country) to move abroad and learn JavaScript and React programming. Now my goal is to continue my lifelong learning under the mentorship of an amazing company and their senior developers.</p>
                         </div>
                         <div className="tech-stack">
-                            <h4>Current tech stack</h4>
+                            <h4>Current Tech Stack</h4>
                             <ul className="skills">
                                 <li className="skill-item">
                                     <FaFigma className="icon"/>
@@ -81,9 +81,9 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
                             <div className="award-item">
                                 <div className="award-top"></div>
                                 <div className="award-mid">
-                                        BUILDING<br/>
-                                        WEBSITES<br/>
-                                        SINCE 2009
+                                        Building<br/>
+                                        Websites<br/>
+                                        Since 2009
                                         <div className="purple-bar"></div>
                                 </div>
                                 <div className="award-bottom"></div>
@@ -91,9 +91,9 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
                             <div className="award-item">
                                 <div className="award-top"></div>
                                 <div className="award-mid">
-                                        WORKING<br/>
-                                        REMOTELY<br/>
-                                        SINCE 2017
+                                        Working<br/>
+                                        Remotely<br/>
+                                        Since 2017
                                         <div className="purple-bar"></div>
                                 </div>
                                 <div className="award-bottom"></div>
@@ -101,9 +101,9 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
                             <div className="award-item">
                                 <div className="award-top"></div>
                                 <div className="award-mid">
-                                        SELF<br/>
-                                        TAUGHT<br/>
-                                        PROGRAMMER
+                                        Self<br/>
+                                        Taught<br/>
+                                        Programmer
                                         <div className="purple-bar"></div>
                                 </div>
                                 <div className="award-bottom"></div>
@@ -117,7 +117,7 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
             <section className="work" id="work">
                 <div className="container">
                     <div className="section-header">
-                        <h2>I love to create</h2>
+                        <h2>I Love to Create</h2>
                         <div className="purple-bar"></div>
                     </div>
                     <div className="section-content">
@@ -143,7 +143,7 @@ const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
             <section className="contact" id="contact">
                 <div className="container">
                     <div className="section-header">
-                        <h2>Let's connect</h2>
+                        <h2>Let's Connect</h2>
                         <div className="purple-bar"></div>
                     </div>
                     <div className="section-content">
