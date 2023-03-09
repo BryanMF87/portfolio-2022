@@ -9,7 +9,7 @@ import { MdAlternateEmail } from 'react-icons/md';
 import { FiDownload } from 'react-icons/fi';
 // import assets
 import me from '../../assets/me.png';
-import resume from '../../assets/resume2023.pdf';
+import resume from '../../assets/bryanfink23.pdf';
 
 
 const HomePage = ({ isOpen, setIsOpen, setActiveProject}) => {
